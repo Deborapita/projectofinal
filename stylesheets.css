@@ -1,0 +1,50 @@
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none; }
+
+header {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://picsum.photos/id/631/1280/800);
+  background-size: cover; }
+  header nav {
+    font-weight: 400;
+    font-size: 10pt;
+    height: 64px; }
+  header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none; }
+  header nav li {
+    width: 150px;
+    position: relative; }
+  header nav li a {
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  header .headwrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 150px; }
+    header .headwrap h1 {
+      margin: 0; }
+      header .headwrap h1 a {
+        color: #FFFFFF;
+        font-size: 56px; }
+    header .headwrap p {
+      margin: 0;
+      color: #FFFFFF;
+      font-size: 32px;
+      font-family: 'Poppins', sans-serif; }
+
+/*# sourceMappingURL=stylesheets.css.map */
