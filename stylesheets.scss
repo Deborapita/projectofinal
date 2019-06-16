@@ -68,6 +68,14 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
 body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -126,6 +134,46 @@ header {
             color: $white;
             font-size: 32px;
             font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+
+
+main {
+    float: left;
+    
+    section {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        .about-photo {
+            width: 40%;
+        }
+        
+        .about-text {
+            width: 60%;
+            padding: 100px 200px 100px 100px;
+            box-sizing: border-box;
+            
+            h2 {
+                margin: 0;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+            .skills-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 80px;
+                
+                .skills{
+                    width: 65px;
+                    margin: 10px 20px 10px 0;
+                }
+            }
         }
     }
 }
