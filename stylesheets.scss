@@ -1,5 +1,5 @@
 $white: #FFFFFF;
-$black: #000000;
+$grey: #4d4d4d;
 
 @mixin screen($size) {
   $desktop: "(min-width: 1024px)";
@@ -81,6 +81,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-decoration: none;
+    color: $grey;
 }
 
 
@@ -152,7 +153,7 @@ main {
         
         .about-text {
             width: 60%;
-            padding: 100px 200px 100px 100px;
+            padding: 15% 15% 5% 5%;
             box-sizing: border-box;
             
             h2 {
@@ -174,6 +175,60 @@ main {
                     margin: 10px 20px 10px 0;
                 }
             }
+        }
+        .estudos {
+            width: 40%;
+            padding-left: 10%;
+            box-sizing: border-box;
+        }
+        .experiencia {
+            width: 60%;
+            padding: 0 15% 5% 5%;
+            box-sizing: border-box;
+        }
+    }
+    
+    .items {
+        margin-top: 200px;
+        justify-content: center;
+        background-image: url(img/bg-items.svg);
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        flex-wrap: wrap;
+
+        article {
+            position: relative;
+            box-sizing: border-box;
+            background-color: $grey;
+            padding: 50px 40px;
+            margin: 30px;
+            border-radius: 30px;
+            width: 300px;
+            
+            h3 {
+                color: $white;
+            }
+            p {
+                color: $white;
+            }
+            
+            .avatar {
+                width: 130px;
+                height: 130px;
+                border-radius: 20px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+                margin-top: -125px;
+                @include center(true, false);
+            }
+        }
+    }
+    
+    section {
+        .column50 {
+            width: 50%;
+            background-color: #e6e6e6;
         }
     }
 }

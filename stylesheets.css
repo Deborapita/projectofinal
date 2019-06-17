@@ -11,7 +11,8 @@ body {
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #4d4d4d; }
 
 header {
   display: block;
@@ -62,7 +63,7 @@ main {
       width: 40%; }
     main section .about-text {
       width: 60%;
-      padding: 100px 200px 100px 100px;
+      padding: 15% 15% 5% 5%;
       box-sizing: border-box; }
       main section .about-text h2 {
         margin: 0;
@@ -78,5 +79,46 @@ main {
         main section .about-text .skills-wrap .skills {
           width: 65px;
           margin: 10px 20px 10px 0; }
+    main section .estudos {
+      width: 40%;
+      padding-left: 10%;
+      box-sizing: border-box; }
+    main section .experiencia {
+      width: 60%;
+      padding: 0 15% 5% 5%;
+      box-sizing: border-box; }
+  main .items {
+    margin-top: 200px;
+    justify-content: center;
+    background-image: url(img/bg-items.svg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 225px;
+    flex-wrap: wrap; }
+    main .items article {
+      position: relative;
+      box-sizing: border-box;
+      background-color: #4d4d4d;
+      padding: 50px 40px;
+      margin: 30px;
+      border-radius: 30px;
+      width: 300px; }
+      main .items article h3 {
+        color: #FFFFFF; }
+      main .items article p {
+        color: #FFFFFF; }
+      main .items article .avatar {
+        width: 130px;
+        height: 130px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: -125px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0); }
+  main section .column50 {
+    width: 50%;
+    background-color: #e6e6e6; }
 
 /*# sourceMappingURL=stylesheets.css.map */
