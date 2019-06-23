@@ -29,7 +29,7 @@ header {
   float: left;
   width: 100%;
   height: 100vh;
-  background-image: url(https://picsum.photos/id/631/1280/800);
+  background-image: url(img/HERO.svg);
   background-size: cover; }
   header nav {
     font-weight: 400;
@@ -39,6 +39,12 @@ header {
     display: flex;
     flex-wrap: nowrap;
     list-style: none; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      header nav ul {
+        padding-left: 0; } }
+    @media only screen and (max-width: 767px) {
+      header nav ul {
+        padding-inline-start: 0; } }
   header nav li {
     width: 150px;
     position: relative; }
@@ -52,50 +58,91 @@ header {
     top: 50%;
     transform: translate(0, -50%);
     margin-left: 150px; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      header .headwrap {
+        margin-left: 5%; } }
+    @media only screen and (max-width: 767px) {
+      header .headwrap {
+        margin-left: 20px; } }
     header .headwrap h1 {
       margin: 0; }
       header .headwrap h1 a {
         color: #FFFFFF;
         font-size: 56px; }
+        @media only screen and (max-width: 767px) {
+          header .headwrap h1 a {
+            font-size: 32px; } }
     header .headwrap p {
       margin: 0;
       color: #FFFFFF;
       font-size: 32px;
       font-family: 'Poppins', sans-serif; }
+      @media only screen and (max-width: 767px) {
+        header .headwrap p {
+          font-size: 24px; } }
 
 main {
   float: left; }
   main section {
     display: flex;
     flex-wrap: nowrap; }
+    @media only screen and (max-width: 767px) {
+      main section {
+        flex-wrap: wrap; } }
     main section .about-photo {
       width: 40%; }
+      @media only screen and (max-width: 767px) {
+        main section .about-photo {
+          width: 100%; } }
     main section .about-text {
       width: 60%;
       padding: 15% 15% 5% 5%;
       box-sizing: border-box; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        main section .about-text {
+          padding: 15% 5% 5% 5%; } }
+      @media only screen and (max-width: 767px) {
+        main section .about-text {
+          width: 100%;
+          padding: 15% 5% 5% 5%; } }
       main section .about-text h2 {
         margin: 0;
         font-size: 36px;
         margin-bottom: 20px; }
+      main section .about-text h2:nth-child(3) {
+        font-size: 1.5em;
+        margin-top: 80px; }
       main section .about-text p {
         margin: 0;
         font-size: 16px; }
       main section .about-text .skills-wrap {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: 80px; }
+        flex-wrap: wrap; }
         main section .about-text .skills-wrap .skills {
           width: 65px;
           margin: 10px 20px 10px 0; }
+          @media only screen and (max-width: 767px) {
+            main section .about-text .skills-wrap .skills {
+              margin: 10px 15px 10px 0; } }
     main section .estudos {
       width: 40%;
       padding-left: 10%;
       box-sizing: border-box; }
+      @media only screen and (max-width: 767px) {
+        main section .estudos {
+          width: 100%;
+          padding: 15% 5% 5% 5%; } }
     main section .experiencia {
       width: 60%;
       padding: 0 15% 5% 5%;
       box-sizing: border-box; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        main section .experiencia {
+          padding: 0% 10% 0 5%; } }
+      @media only screen and (max-width: 767px) {
+        main section .experiencia {
+          width: 100%;
+          padding: 15% 5% 5% 5%; } }
   main .items {
     margin-top: 200px;
     justify-content: center;
@@ -105,6 +152,14 @@ main {
     background-repeat: no-repeat;
     padding-top: 225px;
     flex-wrap: wrap; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main .items {
+        margin-top: 0;
+        padding-top: 100px; } }
+    @media only screen and (max-width: 767px) {
+      main .items {
+        margin-top: 0;
+        padding-top: 100px; } }
     main .items article {
       position: relative;
       box-sizing: border-box;
@@ -113,6 +168,9 @@ main {
       margin: 30px;
       border-radius: 30px;
       width: 300px; }
+      @media only screen and (max-width: 767px) {
+        main .items article {
+          width: 100%; } }
       main .items article h3 {
         color: #FFFFFF; }
       main .items article p {
@@ -129,23 +187,59 @@ main {
   main section .column50 {
     width: 50%;
     background-color: #e6e6e6; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main section .column50 {
+        padding: 80px 0 0 0; } }
+    @media only screen and (max-width: 767px) {
+      main section .column50 {
+        width: 100%;
+        padding: 15% 5% 5% 5%; } }
   main section .column50:nth-child(2) {
     box-sizing: border-box;
     padding: 120px 15% 20px 10px; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main section .column50:nth-child(2) {
+        padding: 5% 5% 5% 5%; } }
+    @media only screen and (max-width: 767px) {
+      main section .column50:nth-child(2) {
+        width: 100%;
+        padding: 5% 5% 5% 5%; } }
     main section .column50:nth-child(2) h2 {
       font-size: 36px; }
   main .contactos {
     width: 100%;
-    height: 400px;
-    padding: 100px 15%;
+    height: 310px;
+    padding: 100px 10%;
     background-image: url(img/D6500564FEE07A8B.png);
     background-size: 60%;
     background-position-x: 130%;
     background-position-y: 20px;
     background-repeat: no-repeat; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main .contactos {
+        padding: 5% 5%;
+        height: 200px; } }
+    @media only screen and (max-width: 767px) {
+      main .contactos {
+        width: 100%;
+        height: 180px;
+        padding: 5% 5%; } }
+    main .contactos p {
+      font-size: 42px; }
+      @media only screen and (max-width: 767px) {
+        main .contactos p {
+          font-size: 32px; } }
 
 footer {
+  box-sizing: border-box;
   float: left;
-  padding: 50px 15%; }
+  padding: 50px 10%; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+      padding: 10px 5%; } }
+  @media only screen and (max-width: 767px) {
+    footer {
+      width: 100%;
+      padding: 0 5% 5% 5%; } }
 
 /*# sourceMappingURL=stylesheets.css.map */
