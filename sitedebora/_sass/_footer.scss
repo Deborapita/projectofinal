@@ -1,0 +1,13 @@
+footer {
+    box-sizing: border-box;
+    float: left;
+    padding: 50px 10%;
+        @include screen('tablet') {
+            padding: 10px 5%;
+        }
+    
+        @include screen('mobile') {
+            width: 100%;
+            padding: 0 5% 5% 5%;
+        }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+{% include head.html %}
+
+<body>
+    
+    {% include header.html %}
+    
+    {% include main.html %}
+    
+    {% include footer.html %}
+    
+</body>
+    
+    
+<script>
+    $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $("nav").css("background-color", "#000000");
+        } else {
+          $("nav").css("background-color", "transparent");
+        }
+      });
+    });
+</script>
+    
+</html>
