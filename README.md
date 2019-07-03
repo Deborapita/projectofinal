@@ -1,4 +1,5 @@
 # Portfólio | Débora Pita 
+Para este projecto de programação decidi desenvolver um pequeno portfólio/cv, que tem com principal objectivo divulgar informação e trabalho com um visual apelativo e clean com pequenas interações nos cards onde se situam as áreas de trabalho todas identificadas com iconografia e pequenos textos explicativos, e nos botões para passar a ideia de movimento. Em todo o site contemos algumas secções como area de apresentação (hero), cv, areas de trabalho, ver projecto e por final contactos.
 
 ## Tecnologias Utilizadas
 
