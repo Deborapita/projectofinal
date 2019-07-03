@@ -1,8 +1,6 @@
-# Portfolio | Débora Pita
-## Linguagens e Tecnologias Digitais 
+# Portfolio | Débora Pita 
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-100. First list item
-     - First nested list item
-       - Second nested list item
+### HTML
+Foi utilizado para elaborar a estrutra da página.
